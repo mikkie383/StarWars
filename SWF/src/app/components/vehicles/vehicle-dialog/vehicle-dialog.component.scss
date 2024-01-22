@@ -1,0 +1,10 @@
+.mdc-card{
+  flex-direction: row;
+}
+.mat-mdc-card-header {
+  border-right: 1px solid black;
+  padding: 16px;
+}
+.mat-mdc-card-content h5{
+  text-align: left;
+}

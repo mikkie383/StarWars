@@ -1,0 +1,17 @@
+<mat-card *ngIf="detail">
+  <mat-card-header class="card">
+      <img mat-card-xl-image src="https://via.placeholder.com/150" >
+  </mat-card-header>
+  <mat-card-content>
+    <h4>Name: {{detail.name}}</h4>
+    <h5>Classification: {{  detail.classification }}</h5>
+    <h5>Designation: {{  detail.designation }}</h5>
+    <h5>Average height: {{  detail.average_height }}</h5>
+    <h5>Skin colors: {{  detail.skin_colors }}</h5>
+    <h5>Hair colors: {{  detail.hair_colors }}</h5>
+    <h5>Eye colors: {{  detail.eye_colors }}</h5>
+    <h5>Average lifespan: {{  detail.average_lifespan }}</h5>
+    <h5>Homeworld: {{  detail.homeworld }}</h5>
+    <h5>Language: {{  detail.language }}</h5>
+  </mat-card-content>
+</mat-card>

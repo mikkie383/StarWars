@@ -1,0 +1,13 @@
+<mat-grid-list cols="5" rowHeight="1:1">
+  <mat-grid-tile *ngFor="let person of items">
+    <mat-card *ngIf="person" mat-raised-button (click)="onShowDetail(person.url)">
+      <img src="../../../assets/placeholder.png" alt="placeholder">
+      <h5>{{ person.name }}</h5>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+<mat-paginator [length]="count"
+              [pageSize]="10"
+              (page)="onPageChange($event)"
+              aria-label="Select page">
+</mat-paginator>

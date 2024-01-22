@@ -1,0 +1,8 @@
+<mat-grid-list cols="5" rowHeight="1:1">
+  <mat-grid-tile *ngFor="let vehicle of items">
+    <mat-card *ngIf="vehicle" mat-raised-button (click)="onShowDetail(vehicle.url)">
+      <img src="../../../assets/placeholder.png" alt="placeholder">
+      <h5>{{ vehicle.name }}</h5>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

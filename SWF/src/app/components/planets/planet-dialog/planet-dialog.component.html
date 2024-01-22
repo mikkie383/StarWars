@@ -1,0 +1,16 @@
+<mat-card *ngIf="detail">
+  <mat-card-header class="card">
+      <img mat-card-xl-image src="https://via.placeholder.com/150" >
+  </mat-card-header>
+  <mat-card-content>
+    <h4>Name: {{detail.name}}</h4>
+    <h5>Rotation period: {{  detail.rotation_period }}</h5>
+    <h5>Orbital period: {{  detail.orbital_period }}</h5>
+    <h5>Diameter: {{  detail.diameter }}</h5>
+    <h5>Climate: {{  detail.climate }}</h5>
+    <h5>Gravity: {{  detail.gravity }}</h5>
+    <h5>Terrain: {{  detail.terrain }}</h5>
+    <h5>Surface water: {{  detail.surface_water }}</h5>
+    <h5>Population: {{  detail.population }}</h5>
+  </mat-card-content>
+</mat-card>

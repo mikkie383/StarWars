@@ -1,0 +1,13 @@
+<mat-card *ngIf="detail">
+  <mat-card-header class="card">
+      <img mat-card-xl-image src="https://via.placeholder.com/150" >
+  </mat-card-header>
+  <mat-card-content>
+    <h4>Title: {{detail.title}}</h4>
+    <h5>Episode: {{  detail.episode_id }}</h5>
+    <h5>Opening crawl: {{  detail.opening_crawl }}</h5>
+    <h5>Director: {{  detail.director }}</h5>
+    <h5>Producer: {{  detail.producer }}</h5>
+    <h5>Release date : {{  detail.release_date }}</h5>
+  </mat-card-content>
+</mat-card>

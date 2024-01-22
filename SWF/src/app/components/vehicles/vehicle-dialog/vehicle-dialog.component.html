@@ -1,0 +1,18 @@
+<mat-card *ngIf="detail">
+  <mat-card-header class="card">
+      <img mat-card-xl-image src="https://via.placeholder.com/150" >
+  </mat-card-header>
+  <mat-card-content>
+    <h4>Name: {{detail.name}}</h4>
+    <h5>Model: {{  detail.model }}</h5>
+    <h5>Manufacturer: {{  detail.manufacturer }}</h5>
+    <h5>Cost in credits: {{  detail.cost_in_credits }}</h5>
+    <h5>Length: {{  detail.length }}</h5>
+    <h5>Max atmosphering speed: {{  detail.max_atmosphering_speed }}</h5>
+    <h5>Crew: {{  detail.crew }}</h5>
+    <h5>Passengers: {{  detail.passengers }}</h5>
+    <h5>Cargo capacity: {{  detail.cargo_capacity }}</h5>
+    <h5>Consumables: {{  detail.consumables }}</h5>
+    <h5>Vehicle class: {{  detail.vehicle_class }}</h5>
+  </mat-card-content>
+</mat-card>

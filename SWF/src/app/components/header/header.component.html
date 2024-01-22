@@ -1,0 +1,6 @@
+<mat-toolbar>
+  <a>Star Wars</a>
+</mat-toolbar>
+<mat-tab-group (selectedTabChange)="onShowCategory($event.tab.textLabel)">
+  <mat-tab  *ngFor="let category of tabLables" label="{{ category }}"></mat-tab>
+</mat-tab-group>

@@ -1,0 +1,8 @@
+<mat-grid-list cols="5" rowHeight="1:1">
+  <mat-grid-tile *ngFor="let film of items">
+    <mat-card *ngIf="film" mat-raised-button (click)="onShowDetail(film.url)">
+      <img src="https://via.placeholder.com/150" alt="placeholder">
+      <h5>{{ film.title }}</h5>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

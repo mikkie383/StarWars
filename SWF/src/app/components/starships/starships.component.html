@@ -1,0 +1,8 @@
+<mat-grid-list cols="5" rowHeight="1:1">
+  <mat-grid-tile *ngFor="let starship of items">
+    <mat-card *ngIf="starship" mat-raised-button (click)="onShowDetail(starship.url)">
+      <img src="../../../assets/placeholder.png" alt="placeholder">
+      <h5>{{ starship.name }}</h5>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

@@ -1,0 +1,8 @@
+<mat-grid-list cols="5" rowHeight="1:1">
+  <mat-grid-tile *ngFor="let planet of items">
+    <mat-card *ngIf="planet" mat-raised-button (click)="onShowDetail(planet.url)">
+      <img src="../../../assets/placeholder.png" alt="placeholder">
+      <h5>{{ planet.name }}</h5>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

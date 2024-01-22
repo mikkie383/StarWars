@@ -1,0 +1,8 @@
+<mat-grid-list cols="5" rowHeight="1:1">
+  <mat-grid-tile *ngFor="let species of items">
+    <mat-card *ngIf="species" mat-raised-button (click)="onShowDetail(species.url)">
+      <img src="../../../assets/placeholder.png" alt="placeholder">
+      <h5>{{ species.name }}</h5>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
