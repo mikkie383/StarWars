@@ -35,6 +35,7 @@ export class HomeComponent implements OnInit{
   onPageChange(event: any){
     this.currentPage = event.pageIndex + 1;
     this.fetchData();
+    //console.log(event.pageIndex)
   }
 
 }

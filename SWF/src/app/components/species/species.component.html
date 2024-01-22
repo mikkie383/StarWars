@@ -6,3 +6,8 @@
     </mat-card>
   </mat-grid-tile>
 </mat-grid-list>
+<mat-paginator [length]="count"
+              [pageSize]="10"
+              (page)="onPageChange($event)"
+              aria-label="Select page">
+</mat-paginator>
